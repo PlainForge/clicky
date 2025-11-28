@@ -11,9 +11,9 @@ export default function Login() {
     const { loading, setLoading } = context;
 
     const handeGoogleSignIn = async () => {
+        const provider = new GoogleAuthProvider();
         try {
             setLoading(true);
-            const provider = new GoogleAuthProvider();
             authService.signInWithGoogle(provider);
         } catch (err) {
             console.log(err);

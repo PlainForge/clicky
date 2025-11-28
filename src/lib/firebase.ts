@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.FIREBASE_API_KEY,
+  apiKey: import.meta.env.VITE_API_KEY,
   authDomain: "clickyio.firebaseapp.com",
   projectId: "clickyio",
   storageBucket: "clickyio.firebasestorage.app",
